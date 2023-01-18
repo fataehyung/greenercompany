@@ -1,0 +1,236 @@
+<html>
+<head>
+<title>Greener's Company</title>
+<link href="assets/css/style.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+   
+    <div class="bg-1">
+        <div class="navigation">
+            <h1><img src="assets/image/LOGO.png"></h1>
+            <div class="timer">
+              <div class="display-time">
+                <div id="Time"></div>
+              </div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="about.html">About</a>
+                </li>
+                <li>
+                  <a href="team.html">Team</a>
+                  <ul>
+                    <li><a href="greeting.html">CEO Greeting</a></li>
+                    <li><a href="team.html">Team Profile</a></li>
+                  </ul>
+                </li>
+                <li><a href="description.html">Product</a>
+                    <ul>
+                        <li><a href="description.html">Description</a></li>    
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    <h1>Organization Charts</h1>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {packages:["orgchart"]});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('string', 'Manager');
+        data.addColumn('string', 'ToolTip');
+
+        // For each orgchart box, provide the name, manager, and tooltip to show.
+        data.addRows([
+          [{'v':'SITI AISHAH', 'f':'SITI AISHAH <div style="color:red; font-style:italic"> Director </div>'},
+           '', 'DIRECTOR'],
+          [{'v':'AIN SALSABILA', 'f':'AIN SALSABILA<div style="color:red; font-style:italic"> Assistant Director </div>'},
+           'SITI AISHAH', 'VP'],
+          [{'v':'INTAN NUR FATIHAH', 'f':'INTAN NUR FATIHAH <div style="color:red; font-style:italic"> Chief Operative Officer </div>'}, 
+           'AIN SALSABILA', 'VP'],
+          [{'v':'AMIESYA AKILA', 'f':'AMIESYA AKILA <div style="color:red; font-style:italic"> Administration </div>'}, 
+           'INTAN NUR FATIHAH', 'VP'],
+          [{'v':'MUHAMMAD AMIRUL AMIR', 'f':'MUHAMMAD AMIRUL AMIR <div style="color:red; font-style:italic"> Sales </div>'}, 
+           'INTAN NUR FATIHAH', 'VP'],
+          [{'v':'SARAH', 'f':'SARAH <div style="color:red; font-style:italic"> Management And Acquisitions of Raw Materials </div>'}, 
+           'INTAN NUR FATIHAH', 'VP'],
+          [{'v':'FAHMI', 'f':'FAHMI <div style="color:red; font-style:italic"> Marketing </div>'}, 
+           'INTAN NUR FATIHAH', 'VP'],
+          [{'v':'HAIKAL', 'f':'HAIKAL <div style="color:red; font-style:italic"> Audit </div>'}, 
+           'INTAN NUR FATIHAH', 'VP'],
+          [{'v':'AMMAR', 'f':'AMMAR <div style="color:red; font-style:italic"> IT Department </div>'}, 
+           'INTAN NUR FATIHAH', 'VP'],
+          [{'v':'NAJIHAH', 'f':'NAJIHAH <div style="color:red; font-style:italic"> Finance </div>'}, 
+           'INTAN NUR FATIHAH', 'VP'],
+        ]);
+
+        // Create the chart.
+        var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
+        // Draw the chart, setting the allowHtml option to true for the tooltips.
+        chart.draw(data, {'allowHtml':true});
+      }
+   </script>
+    </head>
+  <body>
+    <div id="chart_div"></div>
+
+  
+    <div class="bg-1">
+      <h1>Team Profile</h1>
+    <div class="gallery">
+      <a target="_blank" href="assets/image/mami.jpg">
+       <a href="assets/image/resume mami.PNG"><img src="assets/image/mami.jpg" alt="Cinque Terre" width="600" height="400"></a>
+      </a>
+    <div class="desc">SITI AISHAH
+      <h6>Director</h6>
+     </div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="assets/image/ain.jpg">
+        <a href="assets/image/.PNG"><img src="assets/image/ain.jpg" alt="Cinque Terre" width="600" height="400"></a>
+      </a>
+    <div class="desc">AIN SALSABILA
+      <h6>Assistant Director</h6>
+      </div>
+     </div>
+
+     <div class="gallery">
+      <a target="_blank" href="assets/image/teah.jpg">
+        <a href="assets/image/teah resume.PNG"><img src="assets/image/teah.jpg" alt="Cinque Terre" width="600" height="700"></a>
+      </a>
+     <div class="desc">INTAN NUR FATIHAH
+      <h6>Chief Operative Officer</h6>
+     </div>
+     </div>
+
+     <div class="gallery">
+      <a target="_blank" href="assets/image/miemie.jpg">
+        <a href="assets/image/resume miemie.PNG"><img src="assets/image/miemie.jpg" alt="Cinque Terre" width="600" height="400"></a>
+      </a>
+    <div class="desc">NOOR AMIESYA AKILA
+      <h6>Administration</h6>
+     </div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="assets/image/mak.jpg">
+        <a href="assets/image/resume mak.PNG"><img src="assets/image/mak.jpg" alt="Cinque Terre" width="600" height="400"></a>
+      </a>
+    <div class="desc">MUHAMMAD AMIRUL AMIR
+      <h6>Sales</h6>
+     </div>
+    </div>
+    
+  
+
+    </div>
+           
+    <div class="Footer-container">
+      <div class="footer">
+        <div class="footer-heading footer1">
+          <h2>COMPANY</h2>
+          <a href="location.html">Location</a>
+          <a href="about.html">About</a>
+          <a href="team.html">Team</a>
+          <a href="description.html">Product</a>
+        </div>
+        <div class="footer-heading footer2">
+          <h2>ADDRESS</h2>
+          <a href="https://goo.gl/maps/DZaqPXAmkdxBT8Sb9">Jalan Anggerik Mokara 31/47,<br /><br />Kota Kemuning, 40460<br /><br />Shah
+            Alam, Selangor</a>
+        </div>
+        <div class="footer-heading footer4">
+          <h2>OPERATION HOURS</h2>
+          <table>
+            <tr>
+              <td>Mon - Fri</td>
+              <td>7 a.m. - 7 p.m</td>
+            </tr>
+            <tr>
+              <td>Sat - Sun</td>
+              <td>Holiday</td>
+            </tr>
+          </table>
+        </div>
+        <div class="footer-heading footer3">
+          <h2>CONNECT WITH US</h2>
+          <ul>
+            <center>
+              <a href="https://www.facebook.com/@Greener.my/"
+                ><img src="assets/image/facebook.png"
+              /></a>
+              <a href="https://twitter.com/@Sya_honour/"
+                ><img src="assets/image/twitter.png"
+              /></a>
+              <a href="https://www.instagram.com/greener.my/"
+                ><img src="assets/image/instagram.png"
+              /></a>
+            </center>
+          </ul>
+        </div>
+      </div>
+      <h4><marquee>MAKE OUR ENVIRONMENT GREENER</marquee></h4>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+  
+
+<script>
+
+let mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+setInterval(()=>{
+          const time = document.querySelector(".display-time #Time");
+          let date = new Date();
+          let hours = date.getHours();
+          let minutes = date.getMinutes();
+          let seconds = date.getSeconds();
+          let day_night = "AM";
+          if(hours > 12){
+          day_night = "PM";
+          hours = hours - 12;
+           }
+if(seconds < 10){
+             seconds = "0" + seconds;
+           }
+           if(minutes < 10){
+             minutes = "0" + minutes;
+           }
+           if(hours < 10){
+             hours = "0" + hours;
+           }
+           time.textContent = hours + ":" + minutes + ":" + seconds + " "+ day_night;
+         });
+
+</script>
+
+</body>
+</html>

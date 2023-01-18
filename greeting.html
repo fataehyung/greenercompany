@@ -1,0 +1,160 @@
+<html>
+<head>
+<title>Greener's Company</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="bg-1">
+        <div class="navigation">
+            <h1><img src="assets/image/LOGO.png"></h1>
+            <div class="timer">
+                <div class="display-time">
+                  <div id="Time"></div>
+                </div>
+              </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="team.html">Team</a>
+                    <ul>
+                        <li><a href="greeting.html">CEO Greeting</a></li>
+                        <li><a href="team.html">Team Profile</a></li>
+                      </ul>
+                </li>
+                <li><a href="description.html">Product</a>
+                    <ul>
+                        <li><a href="description.html">Description</a></li> 
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="greeting-content">
+            <h1><i>Ceo Greeting</i></h1><br><br>
+            <table>
+                <tr>
+                    <td><img src="assets/image/ceo.jpeg"><br><br>
+                        <audio controls>
+                            <source src="assets/sound/ceo-voice.mp3">
+                        </audio>
+                    </td>
+                    <td>Dear visitor,<br><br>
+
+                        Hello and welcome to the Greener website. As you navigate this site, you will discover our broad range of capabilities, which have been built over more than two years of exceptional performance. We take pride in being a customer-focused, financially strong (no debt/debt-free), and agile small business ready to solve today's enterprise's many problems. To ensure excellent organisational performance and promote company growth, we have a strong infrastructure of systems, processes, and corporate resources.<br>
+                        <br>Greener provides scalable and efficient business solutions for today's global digital economy. We provide demonstrated capabilities and solid practises that promote exceptional value, management agility, and superior technical performance. T
+                        <br><br>Our programme managers' expertise and wealth of government experience enable us to effectively manage multiple defence and civilian agency teams at the same time in order to provide a wide range of technology, management, and sustainment services.
+                        <br><br>Our tried-and-true recruitment methods attract highly qualified managers and professionals while also contributing to our diverse corporate culture. Furthermore, our employee training and human resources programmes continue to grow our internal pool of talented specialists capable of meeting customer needs effectively
+                        If you have any questions about our organisation, please contact me or any other member of Systems Plus. We eagerly await your response.
+                        <br><br>
+                        Sincerely,<br><br>
+                        
+                        <b>Ms. Aishah Dahaman</b><br>
+                        CEO of Greener company</td>
+                </tr>
+               
+            </table>
+        </div>               
+    </div>
+    
+
+
+
+    <div class="Footer-container">
+        <div class="footer">
+            <div class="footer-heading footer1">
+                <h2>COMPANY</h2>
+                <a href="location.html">Location</a>
+                <a href="about.html">About</a>
+                <a href="team.html">Team</a>
+                <a href="description.html">Product</a>
+            </div>
+            <div class="footer-heading footer2">
+                <h2>ADDRESS</h2>
+                <a href="https://goo.gl/maps/DZaqPXAmkdxBT8Sb9">Jalan Anggerik Mokara 31/47,<br><br>Kota Kemuning, 40460 <br><br> Shah Alam, Selangor</a>
+            </div>
+            <div class="footer-heading footer4">
+                <h2>OPERATION HOURS</h2>
+                <table>
+                    <tr>
+                        <td>Mon - Fri</td>
+                        <td>7 a.m. - 7 p.m</td>
+                    </tr>
+                    <tr>
+                        <td>Sat - Sun</td>
+                        <td>Holiday</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer-heading footer3">
+                <h2>CONNECT WITH US</h2>
+                <ul>
+                    <center>
+                    <a href="https://www.facebook.com/@Greener.my/"><img src="assets/image/facebook.png"></a>
+                    <a href="https://twitter.com/@Sya_honour/"><img src="assets/image/twitter.png"></a>
+                    <a href="https://www.instagram.com/greener.my/"><img src="assets/image/instagram.png"></a>
+                    </center>  
+                </ul>
+            </div>
+        </div>
+        <h4><marquee>MAKE OUR ENVIRONMENT GREENER</marquee></h4>
+    </div> 
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+  
+
+
+
+<script>
+
+let mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+setInterval(()=>{
+          const time = document.querySelector(".display-time #Time");
+          let date = new Date();
+          let hours = date.getHours();
+          let minutes = date.getMinutes();
+          let seconds = date.getSeconds();
+          let day_night = "AM";
+          if(hours > 12){
+          day_night = "PM";
+          hours = hours - 12;
+           }
+if(seconds < 10){
+             seconds = "0" + seconds;
+           }
+           if(minutes < 10){
+             minutes = "0" + minutes;
+           }
+           if(hours < 10){
+             hours = "0" + hours;
+           }
+           time.textContent = hours + ":" + minutes + ":" + seconds + " "+ day_night;
+         });
+</script>
+
+    
+
+</body>
+</html>
